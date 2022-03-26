@@ -67,7 +67,7 @@ You can get the status of your transaction doing a GET request following the spe
 
 ### URL
 In test you must do post to the URL below,
-where 1 is the transaction id created in Faxi.
+where 1 is the DirectPay id created in Faxi.
 ```
 https://test.faxi.online/api/direct-pay/1
 ```
