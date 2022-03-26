@@ -35,7 +35,7 @@ when the payment is done successfully
 The response will be a JSON with those properties:
 - *success* - a boolean value that say if the transaction is created successfully or not
 - *message* - a description of the action done, it will be useful in case of errors
-- *id* - the id of your transaction created in Faxi
+- *id* - the id of DirectPay created in Faxi
 - *transaction_url* - the link that you should redirect you user to do the payment
 ```json
 {
@@ -49,7 +49,7 @@ The response will be a JSON with those properties:
 ### Webhook
 When the payment is done successfully your Webhook
 will receive a POST with JSON data that contains those properties:
-- *id* - the id of your transaction created in Faxi
+- *id* - the id of DirectPay created in Faxi
 - *internal_reference* - the identifier to your internal transaction id
 - *status* - the status of payment where 1 = success, 0 = pending
 - *payed_at* - when the payment was done
@@ -58,7 +58,7 @@ will receive a POST with JSON data that contains those properties:
 	"id": "12",
 	"internal_reference": "ref123",
 	"status": "1",
-	"payed_at": ""
+	"payed_at": "2022-03-03 19:42:44"
 }
 ```
 
