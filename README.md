@@ -2,8 +2,8 @@
 DirectPay is a service provided by Faxi plaform that allows merchant
 create and receive payment with simple Rest API.
 
-## Create
-To create a new payment you should do a post following the specification shown below.
+## Create transaction
+To create a new payment you should do a post following the specification below.
 
 ### URL
 In test you must do post to the URL below
@@ -42,7 +42,7 @@ The response will be a JSON with those properties:
     "success": "true",
     "message": "Create direct pay successfully",
     "id": 1,
-    "transaction_url": "http://localhost:8000/process-payment/118/7vG9KH3ZA8ENQT01"
+    "transaction_url": "https://test.faxi.online/process-payment/118/7vG9KH3ZA8ENQT01"
 }
 ```
 
@@ -62,3 +62,30 @@ will receive a POST with JSON data that contains those properties:
 }
 ```
 
+## Get transaction status
+You can get the status of your transaction doing a GET request following the specification below.
+
+### URL
+In test you must do post to the URL below,
+where 1 is the transaction id created in Faxi.
+```
+https://test.faxi.online/api/direct-pay/1
+```
+
+### Headers
+To authenticate with the API you should send
+the token provided by Faxi in HTTP Header
+- Authorization: token
+
+### Response
+```json
+{
+    "success": "true",
+    "message": "DirectPay object Found",
+    "id": 1,
+    "internal_reference": "ref123",
+    "status": 0,
+    "payed_at": null,
+    "transaction_url": "https://test.faxi.online/process-payment/118/7vG9KH3ZA8ENQT01"
+}
+```
