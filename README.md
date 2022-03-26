@@ -2,7 +2,7 @@
 DirectPay is a service provided by Faxi plaform that allows merchant
 create and receive payment with simple Rest API.
 
-## Create transaction
+## Create DirectPay
 To create a new payment you should do a post following the specification below.
 
 ### URL
@@ -62,7 +62,7 @@ will receive a POST with JSON data that contains those properties:
 }
 ```
 
-## Get transaction status
+## Get DirectPay status
 You can get the status of your transaction doing a GET request following the specification below.
 
 ### URL
