@@ -66,7 +66,7 @@ will receive a POST with JSON data that contains those properties:
 You can get the status of your transaction doing a GET request following the specification below.
 
 ### URL
-In test you must do post to the URL below,
+In test you must do GET to the URL below,
 where 1 is the DirectPay id created in Faxi.
 ```
 https://test.faxi.online/api/direct-pay/1
