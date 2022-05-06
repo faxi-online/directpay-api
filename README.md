@@ -30,6 +30,16 @@ when the payment is done successfully
 	"internal_reference": "ref123"
 }
 ```
+You can send more data in the request body
+```json
+{
+    "amount": "1000",
+    "callback_url": "https://jsonplaceholder.typicode.com/posts",
+    "internal_reference": "ref123",
+    "description": "Pay my service ABC",
+    "email": "client@mail.com"
+}
+```
 
 ### Response
 The response will be a JSON with those properties:
