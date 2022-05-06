@@ -58,7 +58,7 @@ will receive a POST with JSON data that contains those properties:
 	"id": "12",
 	"internal_reference": "ref123",
 	"status": "1",
-	"payed_at": "2022-03-03 19:42:44"
+	"paid_at": "2022-03-03 19:42:44"
 }
 ```
 
@@ -85,7 +85,7 @@ the token provided by Faxi in HTTP Header
     "id": 1,
     "internal_reference": "ref123",
     "status": 0,
-    "payed_at": null,
+    "paid_at": null,
     "transaction_url": "https://test.faxi.online/process-payment/118/7vG9KH3ZA8ENQT01"
 }
 ```
