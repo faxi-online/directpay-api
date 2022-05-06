@@ -14,7 +14,7 @@ https://test.faxi.online/api/direct-pay
 ### Headers
 To authenticate with the API you should send
 the token provided by Faxi in HTTP Headers
-- Authorization: token
+- Authorization: Bearer token
 - Content-Type: application/json
 
 ### Body
@@ -85,7 +85,7 @@ https://test.faxi.online/api/direct-pay/1
 ### Headers
 To authenticate with the API you should send
 the token provided by Faxi in HTTP Header
-- Authorization: token
+- Authorization: Bearer token
 
 ### Response
 ```json
