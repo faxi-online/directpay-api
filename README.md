@@ -35,7 +35,7 @@ You can send more data in the request body
 {
     "amount": "1000",
     "callback_url": "https://jsonplaceholder.typicode.com/posts",
-    "internal_reference": "ref123",
+    "internal_reference": "ref124",
     "description": "Pay my service ABC",
     "email": "client@mail.com"
 }
@@ -96,6 +96,8 @@ the token provided by Faxi in HTTP Header
     "internal_reference": "ref123",
     "status": 0,
     "paid_at": null,
+    "description": "Pay my service ABC",
+    "email": "client@mail.com",
     "transaction_url": "https://test.faxi.online/process-payment/118/7vG9KH3ZA8ENQT01"
 }
 ```
