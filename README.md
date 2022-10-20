@@ -1,5 +1,5 @@
 # DirectPay API
-DirectPay is a service provided by Faxi plaform that allows merchant
+DirectPay is a service provided by Faxi platform that allows merchant
 create and receive payment with simple Rest API.
 
 ## Create DirectPay
